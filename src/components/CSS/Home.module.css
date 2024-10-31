@@ -1,0 +1,146 @@
+.body {
+    background-color: #deeeff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.esquerda{
+    background-color: #A5D1FF;
+height: 100vh;
+width: 30vw;
+padding: 32px;
+}
+.nav{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+    height: 50vh;
+    margin-top: 10vh;
+}
+.divzinha{
+    display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+}
+.search_bar {
+    /* Estilos da barra de pesquisa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: fill;
+  }
+  .search_bar div{
+      height: 50px;
+      width: 50vw;
+      gap: 12px;
+      background-color: #ACD0F5;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      padding: 12px;
+  }
+  
+  .search_bar input{
+    height: 50px;
+    width: 50vw;
+    background-color: #ACD0F5;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  input::placeholder{
+  font-size: 24px;
+  color: black;
+  border: none;
+  }
+.cardPublicacaoTipoVideo{
+    background-color:aliceblue;
+    width: 30vw;
+    border-radius: 12px;
+
+}
+/* .informacoesDoVideo{
+    background-color: rgba(23, 22, 83, 0.404);
+    padding: 12px;
+    border-radius: 12px 0px 0px 0px;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.infoVideo{
+    font-size: 20px;
+   
+} */
+/* .video{
+    width: 100%;
+} */
+.informacoesDoVideo {
+    position: absolute;
+    background-color: rgba(23, 22, 83, 0.404);
+    padding: 12px;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    color: aliceblue;
+    top: 0;
+    transform: translateY(-100%); /* Mover para fora da tela inicialmente */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+    z-index: 1;
+    opacity: 0; /* Inicialmente invisível */
+}
+.infoEVideo{
+    background-color: rgba(23, 22, 83, 0.404);
+    padding: 12px;
+    border-radius: 12px 0px 0px 0px;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.infoEVideo:hover > .informacoesDoVideo {
+    transform: translateY(0%); /* Exibir informações */
+    opacity: 1; /* Tornar visível */
+
+}
+.video{
+    width: 100%;
+}
+
+.cardPublicacaoTipoVideo hr{
+    border: solid 1.5px #3459DE;
+}
+.divComentar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 12px;
+}
+.divComentar div{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.divComentar h4{
+    color: #3459DE;
+    font-size: 20px;
+}
+.divComentar img{
+    height: 30px;
+}
+
